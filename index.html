@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de TI - INSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2014/01/inss-logo-0.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+            <h1>INSS - Manual de TI</h1>
+            <p>Guia Completo de Comandos e Procedimentos</p>
+             </div>
+         </div>
+    </header>
+
+    <nav>
+        <a href="#basic" class="nav-btn">Manutenção Básica</a>
+        <a href="#windows" class="nav-btn">Windows</a>
+        <a href="#cmd" class="nav-btn">Comandos CMD</a>
+        <a href="#network" class="nav-btn">Rede</a>
+        <a href="#office" class="nav-btn">Office 365</a>
+        <a href="#security" class="nav-btn">Segurança</a>
+        <a href="#problems" class="nav-btn">Problemas Comuns</a>
+        <a href="#contact" class="nav-btn">Contatos TI</a>
+    </nav>
+
+    <main>
+        <section id="basic" class="content">
+    <h2>Manutenção Básica do Computador</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Limpeza de Arquivos</h3>
+            <ul>
+                 <li><strong>Arquivos Temporários:</strong> Windows + R - digite <code>%temp%</code> - Delete tudo </li>
+                    <li><strong>Limpeza de Disco:</strong> Pesquise "Limpeza de Disco" - Selecionar C: - Limpar</li>
+                    <li><strong>Prefetch:</strong> Windows + R - digite <code>Prefetch</code> - Delete tudo </li>
+                    <li><strong>Recent:</strong> Windows + R - digite <code>recent</code> - Delete tudo</li>
+                </ul>
+            </div>
+
+
+                <div class="card">
+            <h3>Atualizações</h3>
+            <ul>
+                <li><strong>Windows Update:</strong> Configurações - Atualização e Segurança</li>
+                <li><strong>Verificar Atualizações:</strong> Clique em "Verificar se há atualizações"</li>
+                <li><strong>Reiniciar após atualizar:</strong> Sempre reinicie o computador</li>
+            </ul>
+          </div>
+
+     <div class="card">
+         <h3>Desfragmentação (HDD)</h3>
+            <ul>
+                <li><strong>Pesquise:</strong> "Desfragmentar e Otimizar"</li>
+                <li><strong>Selecionar:</strong> Escolha o disco C:</li>
+                <li><strong>Otimizar:</strong> Clique em "Otimizar"</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+    <section id="windows" class="content">
+    <h2>Comandos e Atalhos do Windows</h2>
+    <div class="card-container">
+        <div class="card">
+        <h3>Atalhos Essenciais</h3>
+            <ul>
+                <li><code>Windows + E</code> - Abrir Explorador de Arquivos</li>
+                <li><code>Windows + R</code> - Executar comando</li>
+                <li><code>Windows + I</code> - Configurações</li>
+                <li><code>Windows + L</code> - Bloquear computador</li>
+                <li><code>Windows + D</code> - Mostrar área de trabalho</li>
+                <li><code>Windows + X</code> - Menu de acesso rápido</li>
+            </ul>
+        </div>
+        <div class="card">
+        <h3>Executar (Windows + R)</h3>
+            <ul>
+                <li><code>control</code> - Painel de Controle</li>
+                <li><code>msconfig</code> - configuração do Sistema</li>
+                <li><code>devmgmt.msc</code> - Gerenciador de Dispositivos</li>
+                <li><code>services.msc</code> - serviços do Windows</li>
+                <li><code>appwiz.cpl</code> - Programas e Recursos</li>
+                <li><code>ncpa.cpl</code> - Conexões de Rede</li>
+                <li><code>sysdm.cpl</code> - Propriedade do Sistema </li>
+            </ul>
+        </div>
+        <div class="card">
+        <h3>Modo Seguro</h3>
+        <ul>
+            <li><strong>Método 1:</strong> Shift + Reiniciar - Solução de Problemas - Inicialização Avançada</li>
+            <li><strong>Método 2:</strong> msconfig - Inicialização Segura </li>
+            <li><strong>Método 3:</strong> Forçar 3 desligamento no boot </li>
+        </ul>
+    </div>
+    </div>
+    </section>
+
+    <section id="cmd" class="content">
+    <h2>Comandos do Prompt (CMD)</h2>
+    <div class="info-box">
+    <p><strong>Como abrir:</strong> Windows + R → digite<code> cmd </code> - Enter (ou clique direito "Executar como administrador")</p>
+    </div>
+    <div class="card-container"> 
+        <div class="card">
+        <h3>Sistema</h3>
+        <ul>
+            <li><code>Systeminfo</code> - info completa </li>
+            <li><code>hostname</code> - nome do PC</li>
+            <li><code>whoami</code> - usuário atual</li>
+            <li><code>tasklist</code> - Lista de processos</li>
+            <li><code>taskkill /im programa.exe /f</code> - fechar forçado </li>
+            <li><code>shurtdown /r /t 0 </code>- reiniciar</li>
+            <li><code>shurtdown /s /t 0</code> - desligar</li>
+            <li><code>sfc / scannow </code>- verificar arquivos</li>
+            <li><code>chkdsk C: /f /r</code> - verificar disco</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h3>Rede</h3>
+        <ul>
+            <li><code>ipconfig</code></li>
+            <li><code>ipconfig /all</code> - Ver todas as configuração</li>
+            <li><code>ipconfig /release</code> - Liberar IP</li>
+            <li><code>ipconfig /renew</code> - Ronovar IP</li>
+            <li><code>ipconfig /flushdns</code> - Limpar cache DNS</li>
+            <li><code>ping 8.8.8.8</code> - Testar conexão internet</li>
+            <li><code>ping servidor</code> - Testar Conexão com servidor</li>
+            <li><code>nslookup site.com</code> - Consultar DNS</li>
+            <li><code>tracert site.com</code> - Traçar rota</li>
+            <li><code>netstat -an</code> - Conexões ativas</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Arquivos e Pastas </h3>
+        <ul>
+            <li><code>dir</code> - listar arquivos</li>
+            <li><code>cd pasta</code> - Entrar em pasta</li>
+            <li><code>cd ..</code> - Voltar pasta</li>
+            <li><code>mkdir nome</code> - Criar pasta</li>
+            <li><code>del arqivo</code> - Deletar arquivo</li>
+            <li><code>copy origem destino</code> - Copiar arquivo</li>
+            <li><code>move origem destino</code> - Mover arquivo</li>
+            <li><code>ren antigo novo</code> - Renomear</li>
+        </ul>
+    </div>
+    </div>
+    </section>
+
+    <section id="network" class="content">
+    <h2>Configurações de Rede</h2>
+        <div class="card-container">
+            <div class="card">
+        <h3>Diagnóstico Rápido</h3>
+            <ul>
+                <li><strong>Sem internet:</strong></li>
+                <li>1. Verificar Cabo/WI-FI</li>
+                <li>2. Verificar se WI-FI está ligado</li>
+                <li>3. Reiniciar reteador</li>
+                <li>4. Executar: <code>ipconfig /release</code> e <code>ipconfig /renew</code></li>
+                <li><strong>Lentidão:</strong> <code>ping 8.8.8.8 -t</code> para monitorar</li>
+                <li><strong>DNS:</strong> <code>ipconfig /flushdns</code></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Configurar Rede</h3>
+            <ul>
+                <li><strong>Abrir conexões:</strong> Windows + R - <code>ncpa.cpl</code></li>
+                <li><strong>Ver IP:</strong> Clique direito na conexão → Status → Detalhes</li>
+                <li><strong>Configurar IP:</strong> Propriedades → IPv4 → Propriedades</li>
+                <li><strong>DNS Google:</strong> 8.8.8.8 e 8.8.4.4</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Mapeamento de Unidades</h3>
+            <ul>
+                <li>Explorador - Computador - Mapear Unidade de Rede</li>
+                <li>Caminho: \servidor\pasta</li>
+                <li>Reconectar: Marcar "Reconectar ao fazer logon" </li>
+                <li>CMD: net use Z: \servidor\pasta</li>
+            </ul><br>
+        </div>
+        </div>
+    </section>
+
+        <section id="office" class="content">
+        <h2>Microsoft Office 365</h2>
+        <div class="card-container">
+            <div class="card">
+            <h3>Outlook</h3>
+            <ul>
+                <li><strong>Criar regra:</strong> Página Inicial - Regras - Criar Regra</li>
+                <li><strong>Ausência:</strong> Arquivo - Reposta Automáticas</li>
+                <li><strong>Assinatura:</strong> Arquivo - Opções - Email - Assinaturas</li>
+                <li><strong>Reparar:</strong> Painel de Controle - Programas - Office - Reparar</li>
+                <li><strong>Limpar cache:</strong> %localappdata%\Microsoft\Outlook</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Word/Excel/PowerPoint</h3>
+            <ul>
+                <li><code>Ctrl + S</code> - Salvar</li>
+                <li><code>Ctrl + Z</code> - Desfazer</li>
+                <li><code>Ctrl + Y</code> - Refazer</li>
+                <li><code>Ctrl + P</code> - Imprimir</li>
+                <li><code>Ctrl + F</code> - Localizar</li>
+                <li><code>Ctrl + H</code> - Substituir</li>
+                <li><code>Ctrl + A</code> - Selecionar tudo</li>
+                <li><code>F12</code> - Salvar tudo</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Teams</h3>
+            <ul>
+                <li><strong>Limpar cache:</strong> %appdata%\Microsoft\Teams </li>
+                <li><strong>Problemas:</strong> Sair - Limpar cache - Entrar novamente</li>
+                <li><code>Ctrl + E</code> - Pesquisar</li>
+                <li><code>Ctrl + N</code> - Novo chat</li>
+                <li><code>Ctrl + Shift + M</code> - Mutar microfone</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+        <section id="security" class="content">
+        <h2>Segurança da Informação</h2>
+        <div class="card-container">
+            <div class="card warning">
+            <h3>Boas Práticas</h3>
+            <ul>
+                <li>nunca compartilhe senha</li>
+                <li>Bloqueie o PC: <code>Windows + L</code></li>
+                <li>Não abra anexos suspeitos</li>
+                <li>Verifique rementente antes de clicar</li>
+                <li>Senha fortes sempre</li>
+                <li>Troque senhas periodicamente</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Antivírus</h3>
+            <ul>
+                <li><strong>Verificação rápida:</strong> Segurança do Windows - Proteção contra vírus</li>
+                <li><strong>Verificação completa:</strong> Opções de verificação - Verificação completa</li>
+                <li><strong>Atualizar:</strong> Atualizações de proteção</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Backup</h3>
+            <ul>
+                <li>Salvar docs importantes na rede</li>
+                <li>Usar OneDrive</li>
+                <li>Evitar armazenar tudo no PC</li>
+            </ul>
+        </div>
+        </div>
+        </section>
+
+
+        <section id="problems" class="content">
+        <h2>Problemas Comuns e Soluções</h2>
+        <div class="card-container">
+            <div class="card">
+            <h3>Computador Lento</h3>
+            <ul>
+                <li>Abrir Gerenciador de Tarefas: <code>Ctrl + Shift + Esc</code></li>
+                <li>Verificar processos com alto uso de CPU/Memória</li>
+                <li>Limpar arquivos temporários</li>
+                <li>Desativar programas na inicialização</li>
+                <li>Reiniciar o computador</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Impressora não Funciona</h3>
+            <ul>
+                <li>Verificar se está ligada e conectada</li>
+                <li>Verificar fila de impressão: <code>control printers</code></li>
+                <li>Cancelar documentos parados</li>
+                <li>Reiniciar serviço de spooler:</li>
+                <li>1. <code>services.msc</code></li>
+                <li>2. Localizar "Spooler de Impressão"</li>
+                <li>3. Clique direito - Reiniciar</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Programa não Abre</h3>
+            <ul>
+                <li>Tentar executar como administrador</li>
+                <li>Verificar se o programa está atualizado</li>
+                <li>Reiniciar o computador</li>
+                <li>Reparar pelo Painel de Controle</li>
+                <li>Reinstalar o programa</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Tela Azul (BSOD)</h3>
+            <ul>
+                <li>Anotar o código de erro</li>
+                <li>Reiniciar o computador</li>
+                <li>Executar <code>sfc /scannow</code> como administrador</li>
+                <li>Verificar atualizações do Windows</li>
+                <li>Atualizar drivers</li>
+                <li>Contatar o suporte de TI</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Sem Áudio</h3>
+            <ul>
+                <li>Verificar se não está no mudo</li>
+                <li>Clique direito no ícone de som → Abrir configurações</li>
+                <li>Verificar dispositivo de saída correto</li>
+                <li>Atualizar driver de áudio</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Esqueci a Senha</h3>
+            <ul>
+                <li>Contatar o suporte de TI</li>
+                <li>Solicitar reset de senha</li>
+                <li>Aguardar validação</li>
+            </ul>
+        </div>
+    </div>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>Contatos do Suporte de TI</h2>
+        <div class="card-container">
+            <div class="card contact-card">
+            <h3>Central de Atendimento</h3>
+            <ul>
+                <li><strong>Telefone:</strong> 135 (Previdência)</li>
+                <li><strong>Email:</strong> suporte.ti@inss.gov.br</li>
+                <li><strong>Horário:</strong> Segunda a Sexta, 8h às 18h</li>
+            </ul>
+        </div>
+
+        <div class="card contact-card">
+            <h3>Chamado Técnico</h3>
+            <ul>
+                <li>Acessar sistema de chamados</li>
+                <li>Descrever o problema detalhadamente</li>
+                <li>Informar número do patrimônio</li>
+                <li>Informar localização da estação</li>
+                <li>Aguardar retorno do técnico</li>
+            </ul>
+        </div>
+
+        <div class="card contact-card">
+            <h3>Informações Importantes</h3>
+            <ul>
+                <li><strong>Patrimônio:</strong> Etiqueta no gabinete</li>
+                <li><strong>Nome do PC:</strong> <code>hostname</code> no CMD</li>
+                <li><strong>IP:</strong> <code>ipconfig</code> no CMD</li>
+                <li><strong>Usuário:</strong> <code>whoami</code> no CMD</li>
+            </ul>
+        </div>
+        </div>
+        </section>
+    </main>
+
+        <footer>
+            <p>INSS - Instituto Nacional do Seguro Social </p>
+            <p>Manual de Procedimento de TI - Versão 2024</p>
+            <p> Luany Emanuelly Costa Santos</p>
+        </footer>
+        
+</body>
+</html>
